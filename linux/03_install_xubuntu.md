@@ -63,7 +63,7 @@ Now that we have a virtual machine, we need to install an operating system for t
     ![Start Machine](assets/03-15_install_xubuntu.png)
 
 
-Now, `Xubuntu` should be successfully installed on your VirtualBox machine. Next, we will install Python, R and other common programming and statistical packages using the best available management and distribution system for data scientists and analysts: `[Anaconda](https://anaconda.org)`.
+Now, `Xubuntu` should be successfully installed on your VirtualBox machine. Next, we will install Python, R and other common programming and statistical packages using the best available management and distribution system for data scientists and analysts: [Anaconda](https://anaconda.org).
 
 
 [ [Index](./README.md) ] [ [Back](./02_install_virtualbox.md) ] [ [Next](./04_install_anaconda.md) ]
