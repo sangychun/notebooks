@@ -6,4 +6,4 @@
 
 The most simple definition of a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine) is that it is an isolated substitute for a real computer system with a fully functioning operating system. Virtual machines have many uses, including providing an alternate software environment within an existing operating system, such as running Unix natively within a Windows computing environment. The followng tutorial will walk through the set up of a [Xubuntu](https://xubuntu.org/) virtual machine in a Windows system using the free version of [VirtualBox](https://www.virtualbox.org/).
 
-[[Index](./README.md)] [[Back](./README.md)] [[Next](./01_download_software.md)]
+[ [Index](./README.md) ] [ [Back](./README.md) ] [ [Next](./01_download_software.md) ]
