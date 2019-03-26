@@ -1,7 +1,3 @@
-# **Virtual Machines**
-
-The most simple definition of a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine) is that it is an isolated substitute for a real computer system with a fully functioning operating system. Virtual machines have many uses, including providing an alternate software environment within an existing operating system, such as running Unix natively within a Windows computing environment. The followng tutorial will walk through the set up of a [Xubuntu](https://xubuntu.org/) virtual machine in a Windows system using the free version of [VirtualBox](https://www.virtualbox.org/).
-
 ## Download Necessary Software
 
 *Download VirtualBox*
@@ -31,4 +27,4 @@ The most simple definition of a [virtual machine](https://en.wikipedia.org/wiki/
 You are now ready to install VirtualBox, and then Ubuntu 18.04 LTS on your system. Ubuntu LTS (Long Term Stable) versions are typically supported for 10 years after their release.
 
 
-[Index](./README.md) [Back](./00_linux_introduction.md) [Next](./02_install_virtualbox.md)
+[[Index](./README.md)] [[Back](./00_linux_introduction.md)] [[Next](./02_install_virtualbox.md)]
