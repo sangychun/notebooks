@@ -4,4 +4,4 @@
 
 | #  | Title | Description |
 |:---|:------|:------------|
-| 1  | [Virtual Machines](1_virtualbox.md) | Easy setup of a Linux virtual environment. |
+| 1  | [Virtual Machines](1_virtual_machines.md) | Easy setup of a Linux virtual environment. |
