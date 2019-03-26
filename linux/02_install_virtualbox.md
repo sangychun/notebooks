@@ -40,7 +40,7 @@ We will now install VirtualBox to manage our virtual machine environments.
 
     ![Create Machine](assets/02-07_install_virtualbox.png)
 
-After a few minutes, the VirtualBox Manager should look like the following figure.
+12. After a few minutes, the VirtualBox Manager should look like the following figure. Go to the next step to `Install Xubuntu`.
 
     ![Machine Created](assets/03-01_install_xubuntu.png)
 
