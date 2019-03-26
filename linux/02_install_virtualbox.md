@@ -6,7 +6,7 @@ We will now install VirtualBox to manage our virtual machine environments.
 
 2. Double-click on the `Virtual-6.0.4-128413-Win.exe`* file to install VirtualBox on your system.
 
-*Note*: file name could be different dependent on the date, or the mirror site the software was downloaded from.
+    *Note*: file name could be different dependent on the date, or the mirror site the software was downloaded from.
 
 3. Accept all of the default options, and confirm the installation.
 
