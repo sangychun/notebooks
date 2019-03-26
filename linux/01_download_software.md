@@ -4,11 +4,11 @@
 
 1. Go to: [https://www.virtualbox.org](https://www.virtualbox.org)
 
-2. Click on `Download VirtualBox 6.0` (at the time of this post, current version is 6.0)
+2. Click on `Download VirtualBox 6.0` (at the time of this post, current version is 6.0).
 
     ![VirtualBox Home Page](assets/01-01_homepage_virtualbox.png)
 
-3. Click on `Windows hosts` link to download VirtualBox, and save the file
+3. Click on `Windows hosts` link to download VirtualBox, and save the file.
 
     ![VirtualBox Download Link](assets/01-02_download_virtualbox.png)
 
@@ -16,11 +16,11 @@
 
 1. Go to: [https://xubuntu.org/download/](https://xubuntu.org/download/)
 
-2. Under `Mirror downloads`, select the closest working site
+2. Under `Mirror downloads`, select the closest working site.
 
     ![Xubuntu Mirror Site](assets/01-03_download_xubuntu_mirrors.png)
 
-3. Click on `64-bit PC (AMD64) desktop image` link to download `Xubutu`, and save the file
+3. Click on `64-bit PC (AMD64) desktop image` link to download `Xubutu`, and save the file.
 
     ![Xubuntu Mirror Site](assets/01-04_download_xubuntu_iso.png)
 
