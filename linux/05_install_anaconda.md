@@ -8,6 +8,8 @@
 
 2. Once Anaconda has finished downloading, open a `Terminal` window and go to the directory it was downloaded to, and then enter the following commands:
 
+    ![Install Anaconda](assets/05-02_install_anaconda.png)
+
 ```bash
 cd Downloads/ # Depends on your system.
 sudo sh Anaconda3-2018.12-Linux-x86_64.sh # This is on my workstation, your file may be different.
