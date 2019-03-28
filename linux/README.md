@@ -10,3 +10,4 @@
 | 03 | [Install Xubuntu](03_install_xubuntu.md)        | Guide for installing Xubuntu inside VirtualBox environment                 |
 | 04 | [Setup Xubuntu](04_setup_xubuntu.md)            | Enable file sharing between Windows and Xubuntu environment                |
 | 05 | [Install Anaconda](05_install_anaconda.md)      | Introduction to Anaconda and guide for installation in Xubuntu             |
+| 06 | [Conda Environments](06_conda_environments.md)  | Using Anaconda environments to customize and organize your workspaces      |
