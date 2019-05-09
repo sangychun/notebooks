@@ -314,6 +314,20 @@ FASTQS ...            space-delimited paths to paired end FASTQ files (required 
 $ conda deactivate
 ```
 
+### **Summary**
+
+Here is what our `PATH` variable in the `TensorFlow` environment looks like:
+
+```bash
+$ echo $PATH
+/home/stonyc/anaconda3/envs/tflow/bin:/home/stonyc/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+```
+
+That is a lot easier and cleaner than installing each software package (and their dependencies) one by one. And it is certainly cleaner than this, right?
+
+![Path Variable](assets/06-02_path_variable.png)
+*Image modified from:* [https://astrobiomike.github.io/bash/modifying_your_path](https://astrobiomike.github.io/bash/modifying_your_path)
+
 Next, we will learn about `Docker` and `Container Systems`.
 
 [ [Index](./README.md) ] [ [Back](./05_install_anaconda.md) ] [ [Next](./07_docker_containers.md) ]
