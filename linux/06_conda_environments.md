@@ -318,10 +318,7 @@ $ conda deactivate
 
 Here is what our `PATH` variable in the `TensorFlow` environment looks like:
 
-```bash
-$ echo $PATH
-/home/stonyc/anaconda3/envs/tflow/bin:/home/stonyc/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-```
+![TensorFlow Path Variable](assets/06-05_tflow_environment.png)
 
 That is a lot easier and cleaner than installing each software package (and their dependencies) one by one. And it is certainly cleaner than this, right?
 
