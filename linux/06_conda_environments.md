@@ -4,7 +4,7 @@ This is a multiple part series describing the use and deployment of `Virtual Env
 
 ### **Why?**
 
-In the age of Big Data, research is often shared with many people, repeated, and often scaled up depending on the size of the project. Therefore, the underlying algorithms, software and infrastructure must be **replicable** across many workstations, environments, servers, clusters, or even into the cloud. In order for research to be **replicable**, software developers often describe a set of instructions that define what is required by their algorithms/software to run correctly. These instructions often define other software that is required (**dependencies**), or even the operating system (Windows, Linux, OS X) that is needed to execute the analyses correctly and efficiently.
+In the age of Big Data, analyses and analytical pipelines are frequently shared with many people, repeated, and often scaled up depending on the size or scope of the project. Therefore, the underlying algorithms, software and infrastructure must be **replicable** across many workstations, environments, servers, clusters, or even into the cloud. In order for research to be **replicable**, software developers often describe a set of instructions that define what is required by their algorithms/software to run correctly. These instructions often define other software that is required (**dependencies**), or even the operating system (Windows, Linux, OS X) that is needed to execute the analyses correctly and efficiently.
 
 For example, when you install software into your Linux operating system, if you have **administrator** access to your workstation, you might download a package from the developer's website, then install the package according to their instructions. Often, you may need to tell your operating system where to find the newly installed package; this is usually done by adding the package's location to your `PATH` variable. Over time, after you have installed many software packages, your `PATH` variable might look like this:
 
@@ -16,11 +16,11 @@ This is a little hard to read, but the author provided another way to look at th
 ![Path Variable](assets/06-02_path_variable.png)
 *Image modified from:* [https://astrobiomike.github.io/bash/modifying_your_path](https://astrobiomike.github.io/bash/modifying_your_path)
 
-There are few things of interest to note in this example. First, he has two different versions of `Python` declared. Which version will be used by his Linux operating sytem? Second, what happens if he, for example, installs a new version of `MUMmer`? Would that require an updated version of `Python`? What if he installs a software package that requires `Python` version **2+** and not **3+**? 
+There are few things of interest to note in this example. First, he has two different versions of `Python` declared. Which version will be used by his Linux operating sytem? Second, what happens if he installs a new version of `MUMmer`? Would that require an updated version of `Python`, or maybe he would be required to updated several packages? What if he installs a software package that requires `Python` version **2+** and not **3+**? 
 
-There are some potential solutions to this problem, one of which would be to have different versions of his `.bashrc` or `.profile`, and then use the `source` command in Linux to load the environment and `PATH` variable that he requires for each project.
+There are some potential solutions to this problem, one of which would be to have different versions of his `.bashrc` or `.profile`, and then use the `source` command in Linux to load the environment and `PATH` variable that he requires for each project. But that could lead to confusion and potentially many other problems including broken pipelines, or even worse a broken software environment.
 
-But what if there is an easier way?
+But what if there exists an easier, more efficient, and above all else, a safer way?
 
 ### **How? (Part 1)**
 
