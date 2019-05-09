@@ -102,9 +102,11 @@ Traditionally, in a simplified case, to install `TensorFlow` we might do the fol
 
 * download the `0.7.1` version of the `absl-py` software package 
 * check for other software packages that `absl-py` depends on
-* download the required software packages that `absl-py` depends on
+* download those other required software packages that `absl-py` depends on
+* check for other software packages that those other software packages depend on
+* < potential infinite loop >
 * install those other required software packages that `absl-py` depends on
-* add those software packages to your `PATH` variable
+* add those software packages to your `PATH` variable (if required)
 * install `absl-py` to your Linux operating system
 * add the `absl-py` software package to your `PATH` variable (if required)
 
