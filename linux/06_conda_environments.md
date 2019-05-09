@@ -208,6 +208,7 @@ With `conda`, you can create a separate environment for your analyses using `Ten
 ##### Create environment named `tflow` for TensorFlow:
 
 ```bash
+# We give the `name` of the environment, and an optional `channel` to use as a source:
 $ conda create -n tflow -c conda-forge tensorflow
 ```
 
@@ -228,6 +229,7 @@ $ conda deactivate
 ##### Create environment named `gatk` for GATK:
 
 ```bash
+# We give the `name` of the environment, and an optional `channel` to use as a source:
 $ conda create -n gatk -c bioconda gatk
 ```
 
