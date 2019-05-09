@@ -259,15 +259,14 @@ base                  *  /home/stonyc/anaconda3
 bmx                      /home/stonyc/anaconda3/envs/bmx
 gapsolver                /home/stonyc/anaconda3/envs/gapsolver
 gatk                     /home/stonyc/anaconda3/envs/gatk
-spectre                  /home/stonyc/anaconda3/envs/spectre
 tflow                    /home/stonyc/anaconda3/envs/tflow
 ```
 
-That's it.
+That's it. A few commands gives you access to the specific software environment built for each analytical pipeline or workflow.
 
 ### **Implementation**
 
-Now, let's see how we might implement this for a custom software package.
+Now, let's see how we might use this for a custom software package.
 
 ##### Download `GAP-SOLVER`:
 
