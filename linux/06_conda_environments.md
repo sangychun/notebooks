@@ -208,13 +208,13 @@ With `conda`, you can create a separate environment for your analyses using `Ten
 ##### Create environment named `tflow` for TensorFlow:
 
 ```bash
-conda create -n tflow -c conda-forge tensorflow
+$ conda create -n tflow -c conda-forge tensorflow
 ```
 
 ##### Open the `tflow` environment:
 
 ```bash
-conda activate tflow
+$ conda activate tflow
 ```
 
 < *several hours of TensorFlow analysis* >
@@ -222,19 +222,19 @@ conda activate tflow
 ##### Close the `tflow` environment:
 
 ```bash
-conda deactivate
+$ conda deactivate
 ```
 
 ##### Create environment named `gatk` for GATK:
 
 ```bash
-conda create -n gatk -c bioconda gatk
+$ conda create -n gatk -c bioconda gatk
 ```
 
 ##### Open the `gatk` environment:
 
 ```bash
-conda activate gatk
+$ conda activate gatk
 ```
 
 < *several hours of GATK analysis* >
@@ -242,13 +242,13 @@ conda activate gatk
 ##### Close the `gatk` environment:
 
 ```bash
-conda deactivate
+$ conda deactivate
 ```
 
 ##### List all of your `conda` environments:
 
 ```bash
-conda info --envs
+$ conda info --envs
 # conda environments:
 #
 base                  *  /home/stonyc/anaconda3
@@ -265,7 +265,54 @@ That's it.
 
 Now, let's see how we might implement this for a custom software package.
 
-< *redacted* >
+##### Download `GAP-SOLVER`:
+
+```bash
+$ git clone https://github.com/sangychun/gapsolver.git
+```
+
+##### Replicate the environment with `conda`:
+
+```bash
+$ cd /path/to/gapsolver/
+$ conda env create -f environment.yml
+```
+
+##### Open the `GAP-SOLVER` environment:
+
+```bash
+$ conda activate gapsolver
+```
+
+##### Start the `GAP-SOLVER` analysis:
+
+```bash
+$ python /path/to/gapsolver.py --help
+GAP-SOLVER: Genome Annotation Pipeline Solver
+
+Usage: gapsolver.py [-h] -c=FILE -p=FILE -o=FILE -P=FILE [--polish=BOOL] [--threads=INT] [--name=STR] [--models=FILE] [--gff=FILE] [--proteins=FILE] [FASTQS ...]
+
+-h --help             show this help message
+-c,--current=FILE     path to current strain genome FASTA file (required)
+-p,--previous=FILE    path to previous strain genome FASTA file (required)
+-o,--orfs=FILE        path to previous strain ORFs nucleotide FASTA file (required)
+-P,--prokka=FILE      path to previous strain Prokka annotation output table (required)
+--polish=BOOL         polish/annotate current strain genome with Pilon and Prokka [default: False]
+--models=FILE         path to previous strain database ORF models file (required if --polish=True)
+--gff=file            path to current strain Prokka annotated GFF file (required if --polish=False)
+--proteins=FILE       path to current strain ORFs amino acid FASTA file (required if --polish=False)
+--name=STR            specify name of current strain genome (will be auto-detected if none provided)
+--threads=INT         specify number of parallel threads to use for GAP-SOLVER analysis[default: 1]
+FASTQS ...            space-delimited paths to paired end FASTQ files (required if --polish=True)
+```
+
+##### Close the `GAP-SOLVER` environment:
+
+```bash
+$ conda deactivate
+```
+
+Next, we will learn about `Docker` and `Container Systems`.
 
 [ [Index](./README.md) ] [ [Back](./05_install_anaconda.md) ] [ [Next](./07_docker_containers.md) ]
 
