@@ -30,11 +30,27 @@ However, before going in to detail on `Virtual Environments`, let's take a step 
 
 ### **What?**
 
-We have previously set up a `Virtual Machine`, so how are they related to `Virtual Environments` and `Container Systems`?
+We have previously set up a `Virtual Machine` to run `Xubuntu` alongside `Windows`, so how are they related to `Virtual Environments` and `Container Systems`?
 
+From the smallest 'footprint' to the largest, at the most basic level:
 
+* a `Virtual Environment` encapsulates a set of **software** instructions or **dependencies**
+* a `Docker Container` or `Container System` encapsulates the entire **software environment**
+* a `Virtual Machine` encapsulates an the **software environment**, its **Operating System** and the underlying **Hardware**
 
-For example, let's look at the software required by the latest version of `TensorFlow` to run on a Linux workstation:
+![Containers Versus Machines](assets/06-03_containers_versus_machines.png)
+
+We will learn more about `Docker` in the next section, but briefly `Docker Containers` have major advantages over traditional `Virtual Machines`:
+
+* they share hardware with the underlying server or workstation
+* they can be scaled to use multiple processers very easily
+* they are smaller (few MBs versus 10s or 100s of MBs)
+
+In practice, we can use a package environment manager like `conda` inside of a `Docker Container` system, and then use the `Container` across multiple servers, workstations, or users very easily.
+
+### **How? (Part 2)**
+
+Let's return to `Virtual Environments`. As described above, `Virtual Environments` encapsulate a set of **software** instructions or **dependencies**. When we wish to install a new software package, that software often **depends** on existing software to run. For example, let's look at the software required by the latest version of `TensorFlow` to run on a Linux workstation:
 
 | Name | Version |
 |-----:|:--------|
