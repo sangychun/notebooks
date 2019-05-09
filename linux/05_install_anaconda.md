@@ -48,4 +48,4 @@ conda upgrade --all
 All of the default Anaconda3 packages should now be installed and updated to the most recent versions. However, before you start to install additional packages, we should learn about Anaconda [virtual environments](../README.md) for developing and running software.
 
 
-[ [Index](./README.md) ] [ [Back](./04_setup_xubuntu.md) ] [ [Next](../README.md) ]
+[ [Index](./README.md) ] [ [Back](./04_setup_xubuntu.md) ] [ [Next](./06_conda_environments.md) ]
