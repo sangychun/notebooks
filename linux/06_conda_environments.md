@@ -189,15 +189,15 @@ Then, repeat those steps if you want to install another software package to call
 
 The software packages listed above in **bold** are required by both `TensorFlow` and `GATK`. The package versions listed in **bold** are the same in both `TensorFlow` and `GATK`, the package version listed in `italics` are different versions.
 
-Now, what if you wanted to install `TensorFlow` and `GATK` on another workstation?
+Now, what if you wanted to install `TensorFlow` and `GATK` on another workstation? What if you wanted to install `TensorFlow` and `GATK` on the workstations of each member of your **Data Science** team?
 
 ![Sad Captain](assets/06-04_sad_captain.png)
 
-The above is one example why many people find it very hard to learn to use Linux.
+The above is one example why many people find it very hard to learn and use Linux.
 
 ### **How? (Part 3)**
 
-So, what if you could install `TensorFlow` and `GATK`, any other package(s), or combination of packages with just a few commands? And, what if you **replicate** the exact same set of packages and package versions on another workstation or server just as easily?
+So, what if you could install `TensorFlow` and `GATK`, any other package(s), or combination of packages with just a few commands? And, what if you can **replicate** the exact same set of software packages and package versions on another workstation or server just as easily?
 
 How?
 
