@@ -322,8 +322,8 @@ Here is what our `PATH` variable in the `TensorFlow` environment looks like:
 
 That is a lot easier and cleaner than installing each software package (and their dependencies) one by one. And it is certainly cleaner than this, right?
 
-![Path Variable](assets/06-02_path_variable.png)
-*Image modified from:* [https://astrobiomike.github.io/bash/modifying_your_path](https://astrobiomike.github.io/bash/modifying_your_path)
+![Path Variable](assets/06-01_path_variable.png)
+*Image downloaded from:* [https://astrobiomike.github.io/bash/modifying_your_path](https://astrobiomike.github.io/bash/modifying_your_path)
 
 Next, we will learn about `Docker` and `Container Systems`.
 
