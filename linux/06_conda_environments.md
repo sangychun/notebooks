@@ -80,6 +80,8 @@ That's right. In `Python` **v2** the default behavior of **division** operations
 2.5
 >>> 5 / 2.0
 2.5
+>>> 5 // 2
+2.5
 ```
 
 Here's something that wouldn't work:
@@ -99,10 +101,23 @@ Why would this be a problem?
 >>> fpkm_sample_1 = 10
 >>> fpkm_sample_2 = 15
 >>> average_fpkm = (fpkm_sample_1 + fpkm_sample_2) / 2
+>>> print average_fpkm
 12
 ```
 
-That could have major problems for many analyses.
+###### Python 3
+
+```python
+>>> fpkm_sample_1 = 10
+>>> fpkm_sample_2 = 15
+>>> average_fpkm = (fpkm_sample_1 + fpkm_sample_2) / 2
+>>> print(average_fpkm)
+12.5
+```
+
+You could see how that might have major problems for many analyses if one person is using a `Python` **v2** environment and someone else is doing the same analysis in a **v3** environment.
+
+##### Summary
 
 There are some potential solutions to this problem, one of which would be to have different versions of his `.bashrc` or `.profile`, and then use the `source` command in Linux to load the environment and `PATH` variable that he requires for each project. But that could lead to confusion and potentially many other problems including broken pipelines, or even worse a broken software environment.
 
