@@ -215,8 +215,7 @@ Traditionally, in a simplified case, to install `TensorFlow` we might do the fol
 
 Repeat those steps for every other software package listed above.
 
-Then, repeat those steps if you want to install another software package to call genomic sequence variants using NGS data, like `GATK`:
-
+Then, repeat those steps if you want to install another software package to call genomic sequence variants using NGS data, like `GATK` (software packages listed below in **bold** are required by both `TensorFlow` and `GATK`, package versions listed in **bold** are the same across `TensorFlow` and `GATK`, and those package version listed in *italics* are different versions):
 
 | Name | Version |
 |-----:|:--------|
@@ -292,9 +291,7 @@ Then, repeat those steps if you want to install another software package to call
 | **xz** | **5.2.4** |
 | **zlib** | *1.2.8* |
 
-The software packages listed above in **bold** are required by both `TensorFlow` and `GATK`. The package versions listed in **bold** are the same in both `TensorFlow` and `GATK`, the package version listed in `italics` are different versions.
-
-Now, what if you wanted to install `TensorFlow` and `GATK` on another workstation? What if you wanted to install `TensorFlow` and `GATK` on the workstations of each member of your **Data Science** team?
+Now, what if you wanted to install `TensorFlow` and `GATK` on another workstation? What if you wanted to install `TensorFlow` and `GATK` on the workstations for each member of your **Data Science** team?
 
 ![Sad Captain](assets/06-04_sad_captain.png)
 
@@ -302,11 +299,11 @@ The above is one example why many people find it very hard to learn and use Linu
 
 ### **How? (Part 3)**
 
-So, what if you could install `TensorFlow` and `GATK`, any other package(s), or combination of packages with just a few commands? And, what if you can **replicate** the exact same set of software packages and package versions on another workstation or server just as easily?
+So, what if you could install `TensorFlow` and `GATK`, any other package(s), or combination of packages with just a few commands? And, what if you can **replicate** the **exact** same set of software packages and package versions on another workstation or server just as easily?
 
 How?
 
-With `conda` environments.
+With `conda` virtual environments.
 
 With `conda`, you can create a separate environment for your analyses using `TensorFlow` and a separate environment for your analyses using `GATK` or any other major software package, and each environment is kept separate and clean from all of the other environments:
 
