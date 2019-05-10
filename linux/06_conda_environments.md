@@ -389,8 +389,6 @@ $ conda activate gapsolver
 
 ![Thanos Snap](assets/06-05_thanos_snap.jpg)
 
-That's it.
-
 ##### Start the `GAP-SOLVER` analysis:
 
 ```bash
