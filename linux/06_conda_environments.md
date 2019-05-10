@@ -93,7 +93,9 @@ Here's something that wouldn't work:
 
 Why would this be a problem?
 
-**Because none of these operations resulted in an error. They are all valid operations in** `Python` **v2, so if you were expecting for example to calculate the average FPKM of DnaA across two samples**...
+*Because none of these operations resulted in an error. They are all valid operations in* `Python` **v2**.
+
+So, for example, if you want to calculate the average FPKM of a gene across two samples:
 
 ###### Python 2
 
