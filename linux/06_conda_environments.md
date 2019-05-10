@@ -387,6 +387,10 @@ $ conda env create -f environment.yml
 $ conda activate gapsolver
 ```
 
+![Thanos Snap](assets/06-05_thanos_snap.jpg)
+
+That's it.
+
 ##### Start the `GAP-SOLVER` analysis:
 
 ```bash
@@ -419,7 +423,7 @@ $ conda deactivate
 
 Here is what our `PATH` variable in the `TensorFlow` environment looks like:
 
-![TensorFlow Path Variable](assets/06-05_tflow_environment.png)
+![TensorFlow Path Variable](assets/06-06_tflow_environment.png)
 
 That is a lot easier and cleaner than installing each software package (and their dependencies) one by one. And it is certainly cleaner than this, right?
 
