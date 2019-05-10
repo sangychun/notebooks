@@ -362,6 +362,15 @@ gatk                     /home/stonyc/anaconda3/envs/gatk
 tflow                    /home/stonyc/anaconda3/envs/tflow
 ```
 
+Here is what our `PATH` variable in the `TensorFlow` environment looks like:
+
+![TensorFlow Path Variable](assets/06-06_tflow_environment.png)
+
+That is a lot easier and cleaner than installing each software package (and their dependencies) one by one. And it is certainly cleaner than this, right?
+
+![Path Variable](assets/06-01_path_variable.png)
+*Image downloaded from:* [https://astrobiomike.github.io/bash/modifying_your_path](https://astrobiomike.github.io/bash/modifying_your_path)
+
 That's it. A few commands gives you access to the specific software environment built for each analytical pipeline or workflow.
 
 ### **Implementation**
@@ -419,14 +428,11 @@ $ conda deactivate
 
 ### **Summary**
 
-Here is what our `PATH` variable in the `TensorFlow` environment looks like:
+As we learned, `conda` virtual environments:
 
-![TensorFlow Path Variable](assets/06-06_tflow_environment.png)
-
-That is a lot easier and cleaner than installing each software package (and their dependencies) one by one. And it is certainly cleaner than this, right?
-
-![Path Variable](assets/06-01_path_variable.png)
-*Image downloaded from:* [https://astrobiomike.github.io/bash/modifying_your_path](https://astrobiomike.github.io/bash/modifying_your_path)
+* are **fast** to set up and very **easy** to use and maintain
+* keep your software environment **clean** and **safe**
+* ensure your software and analyses can be **shared**
 
 Next, we will learn about `Docker` and `Container Systems`.
 
