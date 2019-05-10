@@ -16,7 +16,93 @@ This is a little hard to read, but the author provided another way to look at th
 ![Path Variable](assets/06-02_path_variable.png)
 *Image modified from:* [https://astrobiomike.github.io/bash/modifying_your_path](https://astrobiomike.github.io/bash/modifying_your_path)
 
-There are few things of interest to note in this example. First, he has two different versions of `Python` declared. Which version will be used by his Linux operating sytem? Second, what happens if he installs a new version of `MUMmer`? Would that require an updated version of `Python`, or maybe he would be required to updated several packages? What if he installs a software package that requires `Python` version **2+** and not **3+**? 
+There are few things of interest to note in this example. First, he has two different versions of `Python` declared. Which version will be used by his Linux operating sytem? Second, what happens if he installs a new version of `MUMmer`? Would that require an updated version of `Python`, or maybe he would be required to updated several packages? What if he installs a software package that requires `Python` version **2+** and not **3+**?
+
+Let's look at a few examples:
+
+##### Fatal Errors Easy to Find..
+
+`Python` **v2** was released in 2002, and in 2008 `Python` **v3** was released as an upgrade. The upgrade from **v2** to **v3** introduced many performance improvements, as well as some changes in basic syntax including the `print` statement. In **v2** the `print` statement could be called as a standalone function, whereas in **v3** the `print` statement was changed so that its required format followed other functions and class calls more closely.
+
+Not a big difference, right? However, if you write a script in **v2** format using just the standalone '*quotes*', the `print` statement would work using a **v2** `Python` environment but not a **v3** environment.
+
+###### Python 2
+
+```python
+>>> print 'Hello world'
+Hello world
+>>> print('Hello world')
+Hello world
+```
+
+###### Python 3
+
+```python
+>>> print('Hello world')
+Hello world
+>>> print 'Hello world'
+  File "<stdin>", line 1
+    print 'Hello world'
+                      ^
+SyntaxError: Missing parentheses in call to `print`. Did you mean print('Hello world')?
+```
+
+This is a fairly easy error to correct, but what about **insidious** errors? Errors that are hard to find, especially if you're not expecting them and `Python` doesn't tell you there is something wrong?
+
+##### What Do You Do When Errors Are Not 'Errors'?
+
+The upgrade from `Python` **v2** to **v3** also changed the way basic **division** works. Why would this be important?
+
+###### Python 3
+
+```python
+>>> 5 / 2
+2.5
+```
+
+Easy enough right?
+
+###### Python 2
+
+```python
+>>> 5 / 2
+2
+```
+
+**WHAT?!**
+
+That's right. In `Python` **v2** the default behavior of **division** operations was to treat the input values explicitly, rather than implicitly. Therefore, to replicate the **float division** in **v3**, you would have to write one of the following in **v2** code:
+
+```python
+>>> float(5) / 2
+2.5
+>>> 5 / float(2)
+2.5
+>>> 5 / 2.0
+2.5
+```
+
+Here's something that wouldn't work:
+
+```python
+>>> float(5 / 2)
+2.0
+```
+
+Why would this be a problem?
+
+**Because none of these operations resulted in an error. They are all valid operations in** `Python` **v2, so if you were expecting for example to calculate the average FPKM of DnaA across two samples**...
+
+###### Python 2
+
+```python
+>>> fpkm_sample_1 = 10
+>>> fpkm_sample_2 = 15
+>>> average_fpkm = (fpkm_sample_1 + fpkm_sample_2) / 2
+12
+```
+
+That could have major problems for many analyses.
 
 There are some potential solutions to this problem, one of which would be to have different versions of his `.bashrc` or `.profile`, and then use the `source` command in Linux to load the environment and `PATH` variable that he requires for each project. But that could lead to confusion and potentially many other problems including broken pipelines, or even worse a broken software environment.
 
@@ -24,7 +110,7 @@ But what if there exists an easier, more efficient, and above all else, a safer 
 
 ### **How? (Part 1)**
 
-There are multiple solutions to the problem described aboved, and the solution we will focus on in this section are `Virtual Environments`.
+There are multiple solutions to some of the problems described above, and the solution we will focus on in this section are `Virtual Environments`.
 
 However, before going in to detail on `Virtual Environments`, let's take a step back and look broadly at the available solutions.
 
