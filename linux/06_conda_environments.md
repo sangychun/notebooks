@@ -119,6 +119,12 @@ So, for example, if you want to calculate the average FPKM of a gene across two 
 
 You could see how that might have major problems for many analyses if one person is using a `Python` **v2** environment and someone else is doing the same analysis in a **v3** environment.
 
+In a relatively **best** case scenario, you find an error, and fix it.
+
+In a relatively **worse** case scenario, your analysis/pipeline/environment becomes broken.
+
+In the absolute **worst** case scenario, the error is never discovered and your results contain **inaccurate** values, which enables others who use your results to make **erroneous** conclusions, which in turn results in decisions made using potentially **bad** information, which wastes the time of everyone involved, costs your company money, and makes people trust your analyses less over time.
+
 ##### Summary
 
 There are some potential solutions to this problem, one of which would be to have different versions of one's `.bashrc` or `.profile`, and then use the `source` command in Linux to load the environment and `PATH` variable that one requires for each project. But that could lead to confusion and potentially many other problems including broken pipelines, or even worse a broken software environment.
