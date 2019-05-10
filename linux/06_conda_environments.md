@@ -121,15 +121,15 @@ You could see how that might have major problems for many analyses if one person
 
 ##### Summary
 
-There are some potential solutions to this problem, one of which would be to have different versions of his `.bashrc` or `.profile`, and then use the `source` command in Linux to load the environment and `PATH` variable that he requires for each project. But that could lead to confusion and potentially many other problems including broken pipelines, or even worse a broken software environment.
+There are some potential solutions to this problem, one of which would be to have different versions of one's `.bashrc` or `.profile`, and then use the `source` command in Linux to load the environment and `PATH` variable that one requires for each project. But that could lead to confusion and potentially many other problems including broken pipelines, or even worse a broken software environment.
 
-But what if there exists an easier, more efficient, and above all else, a safer way?
+But what if there exists an **easier**, **more efficient**, and above all else, a **safer** way?
 
 ### **How? (Part 1)**
 
 There are multiple solutions to some of the problems described above, and the solution we will focus on in this section are `Virtual Environments`.
 
-However, before going in to detail on `Virtual Environments`, let's take a step back and look broadly at the available solutions.
+However, before going in to detail on `Virtual Environments`, let's take a step back and look broadly at all available solutions.
 
 ### **What?**
 
