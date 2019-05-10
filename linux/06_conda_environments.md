@@ -139,7 +139,7 @@ From the smallest 'footprint' to the largest, at the most basic level:
 
 * a `Virtual Environment` encapsulates a set of **software** instructions or **dependencies**
 * a `Docker Container` or `Container System` encapsulates the entire **software environment**
-* a `Virtual Machine` encapsulates the **software environment**, its **Operating System** and sometimes the underlying **Hardware**
+* a `Virtual Machine` encapsulates the **software environment**, its **operating system** and sometimes the **hardware**
 
 ![Containers Versus Machines](assets/06-03_containers_versus_machines.png)
 
