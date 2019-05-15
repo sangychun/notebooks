@@ -71,7 +71,7 @@ Easy enough right?
 
 **WHAT?!**
 
-That's right. In `Python` **v2** the default behavior of **division** operations was to treat the input values explicitly, rather than implicitly. Therefore, to replicate the **float division** in **v3**, you would have to write one of the following in **v2** code:
+That's right. In `Python` **v2** the default behavior of **division** operations was to treat the input values explicitly. Therefore, to replicate the **float division** in **v3**, you would have to write one of the following in **v2** code:
 
 ```python
 >>> float(5) / 2
@@ -213,7 +213,7 @@ Traditionally, in a simplified case, to install `TensorFlow` we might do the fol
 * check for other software packages that `absl-py` depends on
 * download those other required software packages that `absl-py` depends on
 * check for other software packages that those other software packages depend on
-* < potential infinite loop >
+* **< insert potential infinite loop here >**
 * install those other required software packages that `absl-py` depends on
 * add those software packages to your `PATH` variable (if required)
 * install `absl-py` to your Linux operating system
